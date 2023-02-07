@@ -1,0 +1,12 @@
+INSERT INTO `accounts` (`id`, `name`, `password`, `secret`, `type`, `premium_ends_at`, `email`, `creation`) VALUES
+(1, '1', '5d6dbd9fc5363fe804808d8e3e02c9f4cde6a2e6', NULL, 6, 0, 'matheuscpozzobon@gmail.com', 1675535186);
+
+
+INSERT INTO `players` (`id`, `name`, `name_colour`, `group_id`, `account_id`, `level`, `vocation`, `health`, `healthmax`, `experience`, `lookbody`, `lookfeet`, `lookhead`, `looklegs`, `looktype`, `lookaddons`, `direction`, `maglevel`, `enelevel`, `energy`, `energymax`, `energyspent`, `mana`, `manamax`, `manaspent`, `soul`, `town_id`, `posx`, `posy`, `posz`, `conditions`, `cap`, `sex`, `lastlogin`, `lastip`, `save`, `skull`, `skulltime`, `lastlogout`, `blessings`, `onlinetime`, `deletion`, `balance`, `stamina`, `skill_fist`, `skill_fist_tries`, `skill_club`, `skill_club_tries`, `skill_sword`, `skill_sword_tries`, `skill_axe`, `skill_axe_tries`, `skill_dist`, `skill_dist_tries`, `skill_shielding`, `skill_shielding_tries`, `skill_fishing`, `skill_fishing_tries`) VALUES
+(1, '_GOD_', 215, 6, 1, 8, 1, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 94, 131, 7, '', 470, 1, 1675536378, 16777343, 1, 0, 0, 1675536455, 0, 95, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0),
+(2, '1', 1, 1, 1, 8, 1, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 95, 119, 7, '', 470, 1, 1675536374, 16777343, 1, 0, 0, 1675536378, 0, 4, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0),
+(3, '2', 2, 1, 1, 8, 2, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 5, 5, 2, '', 470, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0),
+(4, '3', 3, 1, 1, 8, 3, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 5, 5, 2, '', 470, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0),
+(4, '11', 11, 1, 1, 8, 3, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 5, 5, 2, '', 470, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0),
+(4, '12', 12, 1, 1, 8, 3, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 5, 5, 2, '', 470, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0),
+(5, '13', 13, 1, 1, 8, 4, 185, 185, 4200, 68, 76, 78, 58, 128, 0, 2, 0, 0, 0, 0, 0, 90, 90, 0, 100, 1, 5, 5, 2, '', 470, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0);
