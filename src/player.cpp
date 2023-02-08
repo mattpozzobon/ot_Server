@@ -1069,8 +1069,17 @@ void Player::onCreatureAppear(Creature* creature, bool isLogin)
 		onChangeZone(getZone());
 		*/
 
+		std::time_t now = std::time(NULL);
+		std::tm* ptm = std::localtime(&now);
+		char buffer[32];
+		// Format: Mo, 15.06.2009 20:20:00
+		//		   "%a, %d.%m.%Y %H:%M:%S"
+		std::strftime(buffer, 32, "%H:%M:%S", ptm);
+
 		if (g_config.getBoolean(ConfigManager::PLAYER_CONSOLE_LOGS)) {
+			std::cout << "<" << buffer << "> ";
 			std::cout << name << " has logged in." << std::endl;
+			std::cout << " " << std::endl;
 		}
 
 		if (guild) {
