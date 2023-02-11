@@ -1,5 +1,76 @@
 local foodCondition = Condition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
 
+function Player.getStr(self)
+	return self:getStorageValue(10100)
+end
+
+function Player.setStr(self, x)
+	self:setStorageValue(10100, x)
+end
+
+function Player.getInt(self)
+	return self:getStorageValue(10102)
+end
+
+function Player.setInt(self, x)
+	self:setStorageValue(10102, x)
+end
+
+function Player.getDex(self)
+	return self:getStorageValue(10101)
+end
+
+function Player.setDex(self, x)
+	self:setStorageValue(10101, x)
+end
+
+function Player.getCon(self)
+	return self:getStorageValue(10103)
+end
+
+function Player.setCon(self, x)
+	self:setStorageValue(10103, x)
+end
+
+function Player.getWis(self)
+	return self:getStorageValue(10104)
+end
+
+function Player.setWis(self, x)
+	self:setStorageValue(10104, x)
+end
+
+function Player.getLuck(self)
+	return self:getStorageValue(10105)
+end
+
+function Player.setLuck(self, x)
+	self:setStorageValue(10105, x)
+end
+
+function Player.getPoints(self)
+	return self:getStorageValue(10000)
+end
+
+function Player.setPoints(self, x)
+	self:setStorageValue(10000, x)
+end
+
+function Player.getAllStats(self, x)
+	local data = {
+		code = tonumber(x),
+		points = self:getStorageValue(10000),		
+		str = self:getStorageValue(10100),			
+		dex = self:getStorageValue(10101), 
+		int = self:getStorageValue(10102),
+		con = self:getStorageValue(10103),
+		wis = self:getStorageValue(10104),
+		luck = self:getStorageValue(10105),
+	}
+	return data
+end
+ 
+ 
 function Player.feed(self, food)
 	local condition = self:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
 	if condition then
